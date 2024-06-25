@@ -16,7 +16,7 @@ def guesser
 
     mid_num = min_num + (max_num - min_num)/2
 
-    puts "Is it #{mid_num}? Y/y - correct, Too loo - L/l, Too high - H/h";
+    puts "Is it #{mid_num}? Y/y - correct, Too low - L/l, Too high - H/h";
     answer = gets.chomp.downcase
   
     if answer == 'y'
@@ -30,7 +30,7 @@ def guesser
       steps += 1
       max_num = mid_num -1
     else
-      puts "Wrong input. Please enter: Y/y - correct, Too loo - L/l, Too high - H/h"
+      puts "Wrong input. Please enter: Y/y - correct, Too low - L/l, Too high - H/h"
     end
   end
   

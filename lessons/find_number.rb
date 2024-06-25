@@ -5,9 +5,6 @@ def find_number
   loop do
     puts "Guess a number from 1 to 100"
     guessed_number = gets.chomp.to_i
-      
-    puts guessed_number
-    puts secret_number
 
     if(guessed_number == 0)
       puts "The guess is invalid number"
